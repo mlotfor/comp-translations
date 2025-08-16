@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation Learner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Side-by-Side Translation Learner</h1>
+        
+        <div id="saved-sessions-container">
+            <h2>Offline Sessions</h2>
+            <div id="saved-sessions-list">
+                <p>No saved sessions yet. Compare a new article to get started!</p>
+            </div>
+        </div>
+
+        <div id="editor-container" style="display: none;">
+            <div class="controls">
+                <div id="headings-container">
+                    <h2 id="heading-1"></h2>
+                    <h2 id="heading-2"></h2>
+                </div>
+                <div class="actions">
+                     <button id="save-btn">Save for Offline Practice</button>
+                     <div class="toggle-switch">
+                        <span>BN / EN</span>
+                        <label class="switch">
+                            <input type="checkbox" id="order-toggle">
+                            <span class="slider round"></span>
+                        </label>
+                        <span>EN / BN</span>
+                     </div>
+                </div>
+            </div>
+            <div id="status-message"></div>
+            <div id="result-container"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

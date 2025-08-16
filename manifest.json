@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Side-by-Side Translation Learner",
+  "version": "3.1",
+  "description": "Reads Bangla and English articles from your open tabs to display them side-by-side.",
+  "permissions": [
+    "storage",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://*.daily-sun.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+}

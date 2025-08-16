@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Translation Helper</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { width: 250px; padding: 10px; background-color: #2b2b2b; }
+        h3 { color: #58a6ff; text-align: center; margin-top: 0;}
+        button { width: 100%; margin-bottom: 10px; }
+        .status-light {
+            width: 12px; height: 12px; background-color: #555;
+            border-radius: 50%; display: inline-block; margin-right: 8px;
+        }
+        .status-light.ready { background-color: #238636; }
+        .status-container { color: #d4d4d4; margin-bottom: 15px; }
+        .hidden { display: none; } /* Utility to hide elements */
+    </style>
+</head>
+<body>
+    <h3>Translation Helper</h3>
+
+    <div id="auto-compare-container" class="hidden">
+        <p style="color: #d4d4d4; text-align: center;">Matching tabs found!</p>
+        <button id="auto-compare-btn">Auto-Compare Found Tabs</button>
+    </div>
+
+    <div id="manual-container" class="hidden">
+        <div class="status-container">
+            <span id="bn-status-light" class="status-light"></span>Bangla Source
+        </div>
+        <div class="status-container">
+            <span id="en-status-light" class="status-light"></span>English Source
+        </div>
+        <button id="set-bn-btn">Set Current Tab as Bangla</button>
+        <button id="set-en-btn">Set Current Tab as English</button>
+    </div>
+    
+    <hr style="border-color: #555;">
+    <button id="compare-btn" disabled>Show Comparison</button>
+    <script src="popup.js"></script>
+</body>
+</html>
